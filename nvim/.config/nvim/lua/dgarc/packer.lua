@@ -1,6 +1,17 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    -- dap
+    use {
+        'mfussenegger/nvim-dap'
+    }
+    use 'jay-babu/mason-nvim-dap.nvim'
+
+    -- File tabs
+    use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
+    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+    use 'romgrk/barbar.nvim'
+
 	use 'wbthomason/packer.nvim'
 
 	-- fuzzy find files
